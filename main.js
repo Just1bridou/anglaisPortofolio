@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   swiper(document.querySelector('.swipe-petitbac'))
   swiper(document.querySelector('.swipe-spaceDim'))
   swiper(document.querySelector('.swipe-ag'))
+  swiper(document.querySelector('.swipe-ht'))
 })
 
 function direction(name) {
@@ -20,6 +21,10 @@ function direction(name) {
     case 'petitbac':
       url = "https://lepetitbac.herokuapp.com/"
       break;
+
+      case 'howto':
+        url = "http://howtotutorial.herokuapp.com/"
+        break;
   }
 
   window.open(url, '_blank').focus();
