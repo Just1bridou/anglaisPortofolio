@@ -3,6 +3,7 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>ANTHOINE-MILHOMME Justin</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="swiper.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">		
 	<link rel="icon" href="logo.ico">
 </head>
@@ -15,12 +16,12 @@
 	<section class="menu">
 
 		<div class="flex-menu">
-			<div tp="#contact">Contact</div>
-			<div tp="#exp">Experiences</div>
-			<div tp="#project">Projects</div>
-			<div tp="#skills">Skills</div>
-			<div tp="#formation">Studies</div>
-			<div tp="#about-me">About me</div>
+			<a href="#about-me">About me</a>
+			<a href="#formation">Studies</a>
+			<a href="#skills">Skills</a>
+			<a href="#project">Projects</a>
+			<a href="#exp">Experiences</a>
+			<a href="#contact">Contact</a>
 		</div>
 
     	<div class="menu-progress">
@@ -59,16 +60,13 @@
 			</div>
 
 			<div class="am-presentation">
-				<span>
-					<p>Hi, my name is Justin, I'm 20 years old</p>
-					<p>I'm actually student at the Annecy University of Technologie (IUT USMB), preparing a "License Professionnelle Développeur Informatique Multi-supports" (IT Developer) </p>
-					<p>I like the web developement because I can express my creativity, there is no limit.</p>
-				</span>
+				<p>Hi, my name is Justin, I'm 20 years old</p>
+				<p>I'm actually student at the Annecy University of Technologie (IUT USMB), preparing a "License Professionnelle Développeur Informatique Multi-supports" (IT Developer) </p>
+				<p>I like the web developement because I can express my creativity, there is no limit.</p>
 			</div>
 		</section>
 
-		<p>You can download my CV here : </p>
-		<a download="ANTHOINE-MILHOMME_Justin_CV" class="CV" href="https://www.justinwebsite.fr/cv4.pdf">Download My CV</a>
+		<a download="ANTHOINE-MILHOMME_Justin_CV" class="CV" target="_blank" href="./EN_CV_ANTHOINE_MILHOMME_Justin_2021.pdf">Download My CV</a>
 
 	<!-- /ABOUT ME SECTION -->
 
@@ -79,49 +77,72 @@
         <section class="title">
         	 <h3 class="title-spawn animateSlide" >Hobbies</h3>
 		</section>
-		
-		<section class="hobbies-imgs">
 
-			<div class="img-hob" style="background-image: url('IMG/bike.jpeg');">
-				<div>
-					<h4>BIKE</h4>
-				</div>
-				<p>
-					I like ride my bike on the forest, go down mountains at high speed. 
-				</p>
-			</div>
-			<div class="img-hob" style="background-image: url('IMG/mb.jpeg');">
-				<div>
-					<h4>MOTORBIKE</h4>
-				</div>
-				<p>
-					I like ride motorbike, the sensation to be free, to feel the air, the fun it provides. 
-				</p>
-			</div>
-			<div class="img-hob" style="background-image: url('IMG/car.jpeg');">
-				<div>
-					<h4>CARS</h4>
-				</div>
-				<p>
-					I like cars, and particulary the technologic aspect, like with autopilots.
-				</p>
-			</div>
-			<div class="img-hob" style="background-image: url('IMG/music.jpeg');">
-				<div>
-					<h4>MUSIC</h4>
-				</div>
-				<p>
-					I'm playing music since 13 since years, now i'm playing electric guitar. 
-				</p>
-			</div>
-			<div class="img-hob" style="background-image: url('IMG/pc.jpeg');">
-				<div>
-					<h4>NEW-TECHNOLOGIES</h4>
-				</div>
-				<p>
-					I'm born with new technologies, and I'm monitoring the latest technological releases.
-				</p>
-			</div>
+		<section class="hobbies-content">
+
+			<section class="ho-fp">
+
+				<section class="sub-fp-fp rowDiv">
+					<div class="img-hob" style="background-image: url('IMG/pc.jpeg');">
+						<div>
+							<h4>NEW-TECHNOLOGIES</h4>
+						</div>
+						<p>
+							I'm born with new technologies, and I'm monitoring the latest technological releases.
+						</p>
+					</div>
+				</section>
+
+				<section class="sub-fp-se rowDiv">
+					<div class="img-hob" style="background-image: url('IMG/car.jpg');">
+						<div>
+							<h4>CARS</h4>
+						</div>
+						<p>
+							I like cars, and particulary the technologic aspect, like with autopilots.
+						</p>
+					</div>
+				</section>
+
+				<section class="sub-ft-tp rowDiv">
+					
+
+					<div class="img-hob" style="background-image: url('IMG/mb.png');">
+						<div>
+							<h4>MOTORBIKE</h4>
+						</div>
+						<p>
+							I like ride motorbike, the sensation to be free, to feel the air, the fun it provides. 
+						</p>
+					</div>
+				</section>
+
+			</section>
+
+			<section class="se-fp">
+				<section class="sub-se-fp colDiv">
+					<div class="img-hob" style="background-image: url('IMG/bike.jpeg');">
+						<div>
+							<h4>BIKE</h4>
+						</div>
+						<p>
+							I like ride my bike on the forest, go down mountains at high speed. 
+						</p>
+					</div>
+				</section>
+
+				<section class="sub-se-se colDiv">
+					<div class="img-hob" style="background-image: url('IMG/music.jpeg');">
+						<div>
+							<h4>MUSIC</h4>
+						</div>
+						<p>
+							I'm playing music since 13 since years, now i'm playing electric guitar. 
+						</p>
+					</div>
+				</section>
+			</section>
+
 		</section>
 
 	</section>
@@ -139,10 +160,8 @@
 		<!-- LP DIM -->
 		<section class="formation-section">
  
-			<div class="form-2015">
-				<h4 class="form-year-title">2020 - 2021
-					<span></span>
-				</h4>
+			<div class="form-location">
+				<h4 class="form-year-title">2020 - 2021</h4>
 
 			<section class="flex-formation">
 
@@ -152,9 +171,8 @@
 				</div>
 
 				<div class="year-info">
-					IUT Annecy
 					<div class="year-loc">
-						<i class="fas fa-map-marker-alt"></i><span> Annecy</span>
+						<i class="fas fa-map-marker-alt"></i><span> IUT Annecy, Annecy</span>
 					</div>
 				</div>
 
@@ -174,10 +192,8 @@
 		<!-- IUT ANNECY -->
 		<section class="formation-section" id="iut">   
 
-			<div class="form-2015">
-				<h4 class="form-year-title">2018 - 2020
-					<span></span>
-				</h4>
+			<div class="form-location">
+				<h4 class="form-year-title">2018 - 2020</h4>
 
 			<section class="flex-formation">
 
@@ -187,9 +203,8 @@
 				</div>
 
 				<div class="year-info">
-					IUT Annecy
 					<div class="year-loc">
-						<i class="fas fa-map-marker-alt"></i><span> Annecy</span>
+						<i class="fas fa-map-marker-alt"></i><span> IUT Annecy, Annecy</span>
 					</div>
 				</div>
 
@@ -210,10 +225,8 @@
 		<!-- LACHENAL -->
 		<section class="formation-section">
  
-			<div class="form-2015">
-				<h4 class="form-year-title">2015 - 2018
-					<span></span>
-				</h4>
+			<div class="form-location">
+				<h4 class="form-year-title">2015 - 2018</h4>
 
 			<section class="flex-formation">
 
@@ -223,9 +236,8 @@
 				</div>
 
 				<div class="year-info">
-					Lycée Louis Lachenal
 					<div class="year-loc">
-						<i class="fas fa-map-marker-alt"></i><span> Argonay</span>
+						<i class="fas fa-map-marker-alt"></i><span> Lycée Louis Lachenal, Argonay</span>
 					</div>
 				</div>
 
@@ -305,6 +317,7 @@
 
 								<ul>
 									<li>Blender</li>
+									<li>Unity</li>
 								</ul>
 
 							</div>
@@ -338,10 +351,10 @@
 					Visit this website
 				</button>
 			</div>
-			<p><span class="project-year">2021</span><span class="project-language">HTML, CSS, Node.JS</span></p>
+			<p class="date-description"><span class="project-year">2021</span><span class="project-language">HTML, CSS, Node.JS</span></p>
 			<p class="p-description">
-				Monopoly is a game I developed in my free time. The game is free, online, fast and designed to have fun with friends.
-				Careful, the game is still in development.
+				<p>Monopoly is a game I developed in my free time. The game is free, online, fast and designed to have fun with friends.
+				Careful, the game is still in development.</p>
 			</p>
 
 		</section>
@@ -360,6 +373,8 @@
 
 	</section>
 
+	<hr>
+
 	<section class="project-section"> <!-- IMAGES -->
 
 		<section class="project-description-section project-flex"> <!-- txt -->
@@ -369,13 +384,10 @@
 					Visit this website
 				</button>
 			</div>
-			<p><span class="project-year">2021</span><span class="project-language">HTML, CSS, Node.JS</span></p>
+			<p class="date-description"><span class="project-year">2021</span><span class="project-language">HTML, CSS, Node.JS</span></p>
 			<p class="p-description">
-				Russian Recipes is a website where you can find recipes for russian dishes. You can also create an account, add your personnal recipes, save recipes, download recipes, complete recipes like in a game with different level of pregression, you can see your progression in "My account".<br><br>
-				This site was designed during the <i>"International Web Week"</i> at the IUT ANNECY.<br><br>
-				For the creation of this website, we were 4 french students and 2 russian students.<br>
-				The website was designed with ADOBDE XD. We used PHP and PDO to get data from our MySQL DataBase.<br><br>
-				Fun fact : This website has been voted best website of the "International Web Week"
+				<p>Le petit bac is a game I developed in my free time. The game is free, online, fast and designed to have fun with friends.
+				Careful, the game is still in development.</p><br><p>Play with your friends, and be the fastest to complete your word grid !</p>
 			</p>
 		</section>
 
@@ -395,6 +407,80 @@
 
 	</section>	
 
+	<hr>
+
+	<section class="project-section"> <!-- IMAGES -->
+
+		<section class="project-description-section project-flex"> <!-- txt -->
+			<div class="title-container">
+				<h6>ANNECY GO</h6>
+				<button class="p-visit disabledButton" disabled">
+					Can't download this app
+				</button>
+			</div>
+			<p class="date-description"><span class="project-year">2021</span><span class="project-language">Flutter</span></p>
+			<p class="p-description">
+				<p>AnnecyGO is an application developed during my LP DIM year.</p> <br>
+				<p>The goal of the application is to discover the monuments around the city of Annecy.</p> <br>
+				<p>It's preferable to play with your friends, monuments will appear on the map, the goal is to 
+				go to these points and answer a question related to the city of Annecy. If the answer 
+				is right, you will win points and discount coupons in bars or restaurants in Annecy.</p>
+			</p>
+
+		</section>
+
+		<section class="project-image-section project-flex" data-img="0">
+
+			<div class="swipe-container swipe-ag">
+				<div class="container">
+					<div style="background-image:url('./SITES_IMG/ag1.PNG')"></div>
+					<div style="background-image:url('./SITES_IMG/ag2.PNG')"></div>
+					<div style="background-image:url('./SITES_IMG/ag3.PNG')"></div>
+					<div style="background-image:url('./SITES_IMG/ag4.PNG')"></div>
+					<div style="background-image:url('./SITES_IMG/ag5.PNG')"></div>
+					<div style="background-image:url('./SITES_IMG/ag6.PNG')"></div>
+				</div>
+			</div>
+		</section>
+
+	</section>
+
+	<hr>
+
+	<section class="project-section"> <!-- IMAGES -->
+
+		<section class="project-description-section project-flex"> <!-- txt -->
+			<div class="title-container">
+				<h6>SPACE DIM</h6>
+				<button class="p-visit disabledButton" disabled">
+					Can't download this app
+				</button>
+			</div>
+			<p class="date-description"><span class="project-year">2021</span><span class="project-language">Kotlin</span></p>
+			<p class="p-description">
+				SpaceDIM is a mutiplayer game available on Android, you can play with your friends, 
+				you have to resolve quests to progress in space and save your spaceship.
+			</p>
+
+		</section>
+
+		<section class="project-image-section project-flex" data-img="0">
+
+			<div class="swipe-container swipe-spaceDim">
+				<div class="container">
+					<div style="background-image:url('./SITES_IMG/sapaceDim1.png')"></div>
+					<div style="background-image:url('./SITES_IMG/sapaceDim2.png')"></div>
+					<div style="background-image:url('./SITES_IMG/sapaceDim3.png')"></div>
+					<div style="background-image:url('./SITES_IMG/sapaceDim4.png')"></div>
+					<div style="background-image:url('./SITES_IMG/sapaceDim5.png')"></div>
+				</div>
+			</div>
+		</section>
+
+	</section>
+
+	<hr>
+	
 	<section class="project-section"> <!-- IMAGES -->
 
 		<section class="project-description-section project-flex"> <!-- txt -->
@@ -404,7 +490,7 @@
 					Can't visit this website
 				</button>
 			</div>
-			<p><span class="project-year">2018</span><span class="project-language">HTML, CSS, PHP, MySQL</span></p>
+			<p class="date-description"><span class="project-year">2018</span><span class="project-language">HTML, CSS, PHP, MySQL</span></p>
 			<p class="p-description">
 				Russian Recipes is a website where you can find recipes for russian dishes. You can also create an account, add your personnal recipes, save recipes, download recipes, complete recipes like in a game with different level of pregression, you can see your progression in "My account".<br><br>
 				This site was designed during the <i>"International Web Week"</i> at the IUT ANNECY.<br><br>
@@ -430,6 +516,8 @@
 
 	</section>	
 
+	<hr>
+
 	<section class="project-section"> <!-- IMAGES -->
 
 		<section class="project-description-section project-flex"> <!-- txt -->
@@ -439,7 +527,7 @@
 					Can't visit this website
 				</button>
 			</div>
-			<p><span class="project-year">2019</span><span class="project-language">HTML, CSS, PHP LARAVEL, PgSQL</span></p>
+			<p class="date-description"><span class="project-year">2019</span><span class="project-language">HTML, CSS, PHP LARAVEL, PgSQL</span></p>
 			<p class="p-description">
 				Fnac is a website where you can simulate online purchases. You can add a game to your shopping cart, but you must be connect to continu. After that, you can select an adress, and the shopping cart is transformed into an order.<br><br>
 				You can add a game to your favorites, you can add 2 games in the comparator, to compare price, the console.<br>
@@ -466,6 +554,8 @@
 
 	</section>
 
+	<hr>
+
 	<section class="project-section"> <!-- IMAGES -->
 
 		<section class="project-description-section project-flex"> <!-- txt -->
@@ -475,7 +565,7 @@
 					Can't visit this website
 				</button>
 			</div>
-			<p><span class="project-year">2019</span><span class="project-language">HTML, CSS</span></p>
+			<p class="date-description"><span class="project-year">2019</span><span class="project-language">HTML, CSS</span></p>
 			<p class="p-description">
 				Un H'air De Famille is a project for a hairdresser's salon in Sillingy, France. This is a showcase site on Wordpress.<br><br>
 				We made the design in HTML &amp; CSS. We also made plugins on Wordpress to allow customers to edit certain areas on the site, such as schedules.
@@ -498,6 +588,8 @@
 
 	</section>
 
+	<hr>
+
 	<section class="project-section"> <!-- IMAGES -->
 
 		<section class="project-description-section project-flex"> <!-- txt -->
@@ -507,7 +599,7 @@
 					Can't download the game
 				</button>
 			</div>
-			<p><span class="project-year">2019</span><span class="project-language">UNITY</span></p>
+			<p class="date-description"><span class="project-year">2019</span><span class="project-language">UNITY</span></p>
 			<p class="p-description">
 				Bullet one is a multiplayer FPS game. You can play in local with your friends or you can play in solo in jump mode. You must finish the journey as soon as possible.<br><br>
 				The game is developped using Unity, the project has been realized in IUT Annecy in team.
@@ -540,18 +632,41 @@
 
 <section class="exp" id="exp">
 
-	<section class="exp-title">
+	<section class="title">
 		 <h3 class="title-spawn animateSlide pointBar">Experiences</h3>
 	</section>
 
 	<section class="exp-section">
 
+		<section class="exp-section-year">
+			<p>2020-2021</p>
+		</section>
+
+		<section class="exp-section-point">
+			<div class="exp-bar top-bar">
+				<div class="exp-point"></div>
+			</div>
+		</section>
+
+		<section class="exp-section-text">
+			<h3>Omnibook</h3>
+			<p>
+				As part of my studies, I'm working at Omnibook, a startup in Annecy. Omnibook is a tool to make digital documents that you
+				can easily create with an interface on the website or the applications, you can easily share them and read them online or offline. I'm developping
+				the iOS application. Earlier this year, I worked on the web app.
+			</p>
+		</section>
+
+</section>
+
+	<section class="exp-section">
+
 			<section class="exp-section-year">
-				<p>Since June 2019</p>
+				<p>2019-2020</p>
 			</section>
 	
 			<section class="exp-section-point">
-				<div class="exp-bar top-bar">
+				<div class="exp-bar">
 					<div class="exp-point"></div>
 				</div>
 			</section>
@@ -559,14 +674,14 @@
 			<section class="exp-section-text">
 				<h3>Un H'Air De Famille</h3>
 				<p>
-					As part of my studies, I'm working on a website and software project for a hair salon "Un H'Air De Famille" located in Sillingy, France.<br><br>
+					When I was in DUT I was working on a website and software project for a hair salon "Un H'Air De Famille" located in Sillingy, France.<br><br>
 					We have made a set of specifications, design the website, the software and divide the team in two to work on the two parts of this project.<br><br>
 					We regularly meet with the client to show them our progress on the project.<br>
 					During this experience, I learned to use Wordpress and its plugins.
 				</p>
 			</section>
 	
-		</section>
+	</section>
 
 	<section class="exp-section">
 
@@ -594,7 +709,7 @@
 	<section class="exp-section">
 
 		<section class="exp-section-year">
-			<p>August 2019<br>August 2018</p>
+			<p>August 2020<br>August 2019<br>August 2018</p>
 		</section>
 
 		<section class="exp-section-point">
@@ -604,7 +719,7 @@
 		</section>
 
 		<section class="exp-section-text">
-			<h3>Les Gorges DU Fier</h3>
+			<h3>Les Gorges Du Fier</h3>
 			<p>
 					"Les gorges du fier" is a tourist site located in Lovagny, France. <br><br>
 					I worked there in the summer of 2018 and 2019 as a waiter on the terrace and barman. I also sold tickets to the site.<br>
@@ -645,7 +760,7 @@
 
 <section class="contact" id="contact">
 
-	<section class="contact-title">
+	<section class="title">
 		 <h3 class="title-spawn animateSlide pointBar">Contact</h3>
 	</section>
 
@@ -662,6 +777,24 @@
 		</div>
 
 	</section>
+
+	<section class="title">
+		<h3 class="title-spawn animateSlide pointBar">References</h3>
+   </section>
+
+   <section class="reference-section">
+
+	   <div>
+		   <div class="c-p"><p><u>Stephanie BOUCHON :</u> Professor at Université Savoie-Mont-Blanc d'Annecy, France
+		</p></div>
+	   </div>
+
+	   <div>
+		   <div class="c-p"><p><u>Pascal COLIN :</u> Professor at Université Savoie-Mont-Blanc d'Annecy, France
+		</p></div>
+	   </div>
+
+   </section>
 
 </section>
 

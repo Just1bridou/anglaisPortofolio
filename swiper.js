@@ -5,10 +5,15 @@ function swiper(elem) {
     var right = createRight(elem)
 
     createClass(childs)
-    console.log(childs)
 
     for(let child of childs) {
-      child.classList.add('swipe-none')
+      (function (el)
+        {
+          el.classList.add('swipe-none')
+          el.addEventListener('click', () => {   
+            createModale(el)
+          })
+        })(child)
     }
 
     container.setAttribute('index', 0)
@@ -24,12 +29,28 @@ function swiper(elem) {
     })
   }
 
+  function createModale(elem) {
+    console.log(elem)
+    let bg = _('div', document.body, null, null, "backgroundModale")
+    let img = _('div', bg, null, null, "imgPreview")
+    let url = elem.style.backgroundImage
+    img.style.backgroundImage = url
+    bg.addEventListener('click', () => {
+      bg.remove()
+    })
+
+  }
+
   function createLeft(elem) {
-    return _('button', elem, "<", null, 'left')
+    let but =  _('button', elem, null, null, 'left')
+    but.innerHTML = '<i class="fas fa-chevron-left"></i>'
+    return but
   }
 
   function createRight(elem) {
-     return _('button', elem, ">", null, 'right')
+    let but =  _('button', elem, null, null, 'right')
+    but.innerHTML = '<i class="fas fa-chevron-right"></i>'
+    return but
   }
 
   function createClass(array) {

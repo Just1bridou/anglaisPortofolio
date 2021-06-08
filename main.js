@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
   swiper(document.querySelector('.swipe-fnac'))
   swiper(document.querySelector('.swipe-monopoly'))
   swiper(document.querySelector('.swipe-petitbac'))
+  swiper(document.querySelector('.swipe-spaceDim'))
+  swiper(document.querySelector('.swipe-ag'))
 })
 
 function direction(name) {
