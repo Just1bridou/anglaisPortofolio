@@ -19,7 +19,7 @@ function direction(name) {
       break;
 
     case 'petitbac':
-      url = "https://lepetitbac.herokuapp.com/"
+      url = "https://petitbac.io/"
       break;
 
       case 'howto':
